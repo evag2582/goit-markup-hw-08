@@ -1,3 +1,5 @@
+@import "../utils/mixins";
+
 .main {
   display: flex;
   padding-bottom: 94px;
@@ -50,3 +52,12 @@
     border: none;
   }
 }
+
+@include screen-480{
+  .main{
+    .main__title{
+      width: 360px;
+      font-size: 26px;
+    }
+  }
+ }

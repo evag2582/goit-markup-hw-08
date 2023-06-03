@@ -19,3 +19,11 @@
     width: 270px;
   }
 }
+
+@include screen-480{
+    .container{
+    width: 480px;
+    flex-wrap: wrap;
+    align-content: center;
+  }
+}
