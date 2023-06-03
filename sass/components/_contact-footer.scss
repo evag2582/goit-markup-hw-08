@@ -1,0 +1,20 @@
+.contact-footer {
+  width: 231px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  text-decoration: none;
+.contact-footer:hover {
+        color: var(--brand-blue);
+    }
+
+    .contact-footer:focus {
+        color: var(--brand-blue);
+    }
+
+}
+

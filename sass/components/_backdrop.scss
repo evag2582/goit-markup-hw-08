@@ -1,0 +1,204 @@
+.backdrop {
+  position: absolute;
+  justify-content: center;
+  align-items: center;
+  left: 0px;
+  top: 0px;
+  width: 1600px;
+  height: 1024px;
+  background: rgba(0, 0, 0, 0.2);
+  display: flex;
+
+  .backdrop__modal {
+    position: absolute;
+    width: 528px;
+    height: 581px;
+    top: 10%;
+    background-color: var(--brand-white);
+    opacity: 1px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    padding: 40px;
+  }
+
+  .backdrop__modal-close {
+    box-sizing: border-box;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: 496px;
+    top: 1px;
+    background-color: var(--brand-white);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 50%;
+    padding-top: 6px;
+    padding-left: 5px;
+    align-items: center;
+  }
+
+  .backdrop__modal-closesvg {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 6px;
+    left: 5px;
+  }
+
+  .backdrop__modal-close:hover,
+  .backdrop__modal-close:focus {
+    fill: var(--brand-blue);
+  }
+
+  .backdrop__modal-title {
+    width: 448px;
+    height: 23px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 23px;
+    letter-spacing: 0.03em;
+    color: var(--brand-black);
+    text-transform: none;
+  }
+
+  .backdrop__modal-name {
+    display: flex;
+    width: 44px;
+    height: 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    /* identical to box height */
+    letter-spacing: 0.01em;
+    color: var(--brand-gray);
+    text-transform: none;
+    text-align: left;
+    padding: 12px;
+    margin-bottom: 4px;
+  }
+
+  .backdrop__modal-group {
+    position: relative;
+  }
+  .modal-form-input {
+    display: block;
+    width: 100%;
+    height: 40px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+    padding-left: 40px;
+    font-size: 50%;
+  }
+
+  .modal-form-input:focus,
+  .modal-form-input:hover,
+  textarea:hover,
+  textarea:focus,
+  .suscrib__modal-suscrib:hover,
+  .suscrib__modal-suscrib:focus,
+  .modal-form-input-suscrib2:hover {
+    border: 1px solid var(--brand-blue);
+  }
+
+  .modal-form-svg {
+    width: 18px;
+    height: 18px;
+    position: absolute;
+    top: 14px;
+    left: 15px;
+  }
+
+  .modal-form-input:hover + .modal-form-svg,
+  .modal-form-input:focus + .modal-form-svg {
+    fill: var(--brand-blue);
+  }
+
+  .backdrop__modal-textarea {
+    width: 100%;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    outline: none;
+    padding: 12px;
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .backdrop__modal-content {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    padding-bottom: 25px;
+  }
+
+  input[type='checkbox']:checked {
+    background: var(--brand-blue);
+    color: white;
+  }
+
+  input[type='checkbox'] {
+    cursor: pointer;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: 0;
+    background: lightgray;
+    height: 15px;
+    width: 16px;
+    border: 1px solid white;
+    color: white;
+  }
+
+  input[type='checkbox']:after {
+    content: ' ';
+    position: relative;
+    left: 30%;
+    width: 50%;
+    height: 100%;
+    border: solid var(--brand-white);
+    border-width: 0 2px 2px 0;
+    transform: rotate(50deg);
+    display: none;
+  }
+
+  input[type='checkbox']:checked:after {
+    display: block;
+  }
+
+  .backdrop__modal-check {
+    display: flex;
+    width: 400.62px;
+    height: 24px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 24px;
+    /* identical to box height, or 171% */
+    letter-spacing: 0.03em;
+    text-transform: none;
+    color: var(--brand-gray);
+    text-align: justify;
+  }
+
+  .backdrop__modal-button {
+    padding: 10px 75px 10px 75px;
+    color: var(--brand-white);
+    background: #188ce8;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 50%;
+    border: none;
+  }
+}
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}

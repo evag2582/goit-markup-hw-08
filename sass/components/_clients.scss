@@ -1,0 +1,34 @@
+.clients-container {
+  display: inline-flex;
+  width: 170px;
+  height: 81px;
+  margin-right: 20px;
+  margin-bottom: 30px;
+  border: 1px solid var(--gray-color);
+  border-radius: 4px;
+
+  .clients-container:focus {
+    background-color: var(--brand-white);
+    border: var(--brand-blue);
+  }
+
+  .clients-container:focus .clients {
+    fill: var(--brand-blue);
+  }
+
+  .clients-container:hover {
+    border-color: var(--brand-blue);
+  }
+
+  .clients-container .clients:hover {
+    fill: var(--brand-blue);
+  }
+
+  .clients {
+    width: 170px;
+    height: 81px;
+    margin-bottom: 30px;
+    padding: 14px 32px;
+    fill: var(--gray-color);
+  }
+}

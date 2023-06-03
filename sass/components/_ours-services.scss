@@ -1,0 +1,21 @@
+.ours-services {
+  display: flex;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  color: var(--brand-black);
+
+  .ours-services__text {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    /* or 171% */
+    letter-spacing: 0.03em;
+    color: var(--brand-gray);
+    margin-left: 1px;
+    width: 270px;
+  }
+}

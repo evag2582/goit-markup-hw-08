@@ -1,0 +1,39 @@
+.menu-list {
+  width: 300px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: space-evenly;
+  box-sizing: border-box;
+
+  .menu-list__link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0.02em;
+    color: var(--brand-black);
+    text-decoration: none;
+  }
+
+  .menu-list__link:hover {
+    color: var(--brand-blue);
+  }
+
+  .menu-list__link:focus {
+    color: var(--brand-blue);
+  }
+  .menu-list__link.active {
+    color: var(--brand-blue);
+  }
+
+  .menu-list__link.active::after {
+    position: relative;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 4px;
+    border-radius: 2px;
+    background: var(--brand-blue);
+    box-sizing: initial;
+  }
+}

@@ -1,0 +1,39 @@
+.titles-team,
+.titles-clients {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 2.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--brand-black);
+  margin-left: 40px;
+  .titles-team__images {
+    display: inline-flex;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #ffffff;
+  }
+
+  .titles-team__bgimages {
+    position: absolute;
+    width: 370px;
+    height: 70px;
+    top: 1591px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--brand-white);
+    background: rgba(47, 48, 58, 0.8);
+  }
+}

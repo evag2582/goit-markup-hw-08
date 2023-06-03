@@ -1,0 +1,68 @@
+@import "./utils/variables";
+@import "./components/menu-list";
+@import "./components/menu-list__contact";
+@import "./components/contact-footer";
+@import "./components/main";
+@import "./components/backdrop";
+@import "./components/ours-services";
+@import "./components/services";
+@import "./components/teams";
+@import "./components/clients";
+@import "./components/address";
+@import "./components/icons-footer";
+@import "./components/suscrib";
+@import "./components/menu-buttons";
+@import "./components/proyecst-card";
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    width: 100%;
+    font-family: 'Roboto', sans-serif;
+    color: $color-black;
+    list-style-type: none;
+}
+header {
+    border-bottom: 1px solid #ececec;
+    margin-top: 20px;
+}
+li {
+    list-style-type: none;
+}
+section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+textarea {
+    resize: none;
+    font-family: inherit;
+    font-size: 50%;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    outline: none;
+}
+.logo {
+    width: 145px;
+    font-family: 'Raleway', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 31px;
+    letter-spacing: 0.03em;
+    color: $color-blue;
+    text-decoration: none;
+}
+
+.container {
+    padding: 0 15px;
+    width: 1200px;
+    margin: 0 auto;
+}
+.page-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 32px;
+}

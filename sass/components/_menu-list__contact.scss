@@ -1,0 +1,46 @@
+.menu-list__link-contact {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  margin-left: 10px;
+  color: var(--brand-gray);
+  list-style: none;
+  text-decoration: none;
+  padding-right: 10px;
+
+  .menu-list__link-iconmail {
+    align-items: center;
+    display: inline-flex;
+    width: 16px;
+    height: 12px;
+    fill: #757575;
+    margin-right: 10px;
+  }
+
+  .menu-list__link-icontel {
+    align-items: center;
+    display: inline-flex;
+    width: 10px;
+    height: 16px;
+    fill: #757575;
+    margin-right: 10px;
+  }
+    .menu-list__link-contact:hover {
+      color: var(--brand-blue);
+    }
+  
+    .menu-list__link-contact:focus {
+      color: var(--brand-blue);
+    }
+  
+    .menu-list__link-contact:hover .menu-list__link-iconmail,
+    .menu-list__link-contact:hover .menu-list__link-icontel,
+    .menu-list__link-contact:focus .menu-list__link-iconmail,
+    .menu-list__link-contact:focus .menu-list__link-icontel {
+      fill: var(--brand-blue);
+    }
+}
+
