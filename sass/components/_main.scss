@@ -3,7 +3,7 @@
 .main {
   display: flex;
   padding-bottom: 94px;
-  width: 100%;
+  width: 1600px;
   height: 600px;
   left: -4px;
   top: 80px;
@@ -52,9 +52,21 @@
     border: none;
   }
 }
-
+@media 
+screen and (min-device-pixel-ratio: 2), 
+screen and (min-resolution:192dpi),
+screen and (min-resolution:2ddpx) {
+  .main{
+    width: auto;
+          background-image: linear-gradient(to top,
+                rgba(47, 48, 58, 0.4),
+                rgba(196, 196, 196, 0.4)),url('../images/bgimage@2X.jpg');
+  }
+  
+}
 @include screen-480{
   .main{
+    max-width: 480px;
     .main__title{
       width: 360px;
       font-size: 26px;

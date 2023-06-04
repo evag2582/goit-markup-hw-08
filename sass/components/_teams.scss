@@ -14,6 +14,9 @@
       0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
     margin: 20px;
+
+    .team-card-image {
+    }
   }
 
   .title-team {
@@ -77,5 +80,23 @@
 
   .social-container:focus .icon-redes {
     fill: var(--brand-white);
+  }
+}
+
+@include screen-480 {
+  .bgcolor-team {
+    .team-container {
+      flex-wrap: wrap;
+      padding: unset;
+    }
+    .team-card {
+      width: 450px;
+      .team-card-image {
+        width: 450px;
+      }
+    }
+    .redes-icons-team {
+      justify-content: center;
+    }
   }
 }

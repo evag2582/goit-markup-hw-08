@@ -23,7 +23,7 @@
 
   .titles-team__bgimages {
     position: absolute;
-    width: 370px;
+    width: 372px;
     height: 70px;
     top: 1591px;
     font-style: normal;
@@ -35,5 +35,16 @@
     text-transform: uppercase;
     color: var(--brand-white);
     background: rgba(47, 48, 58, 0.8);
+  }
+}
+
+@include screen-480{
+  .titles-team,
+    .titles-clients {
+      font-size: 26px;
+      padding: unset;
+  .titles-team__bgimages{
+    top: auto;
+  }
   }
 }
