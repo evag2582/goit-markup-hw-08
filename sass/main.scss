@@ -57,9 +57,12 @@ textarea {
 }
 
 .container {
-    padding: 0 15px;
-    width: 1200px;
-    margin: 0 auto;
+    min-width: 320px;
+    max-width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
 
     @media screen and (min-width:480px){
         width: 480px;
@@ -76,4 +79,22 @@ textarea {
     align-items: center;
     justify-content: space-evenly;
     padding: 32px;
+}
+
+@include screen-480{
+    .page-header{
+    display: unset;
+}
+}
+.menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+
+@media (max-width: 767px) {
+    .menu {
+        display: none;
+    }
 }

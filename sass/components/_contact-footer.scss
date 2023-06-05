@@ -1,3 +1,5 @@
+@import "../utils/mixins";
+
 .contact-footer {
   width: 231px;
   font-family: 'Roboto';
@@ -15,6 +17,9 @@
     .contact-footer:focus {
         color: var(--brand-blue);
     }
-
+  }
+@include screen-480{
+  .contact-footer{
+    margin-left: 20%;
+  }
 }
-
