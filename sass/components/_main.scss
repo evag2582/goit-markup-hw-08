@@ -66,10 +66,12 @@ screen and (min-resolution:2ddpx) {
 }
 @include screen-480{
   .main{
-    max-width: 480px;
+    width: auto;
     .main__title{
       width: 360px;
       font-size: 26px;
     }
   }
  }
+
+ 

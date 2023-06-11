@@ -40,3 +40,14 @@
     }
   }
 }
+@include screen-768 {
+  .bg-footer {
+    height: 500px;
+    .bg-contain-footer {
+      display: flex;
+      width: auto;
+      justify-content: center;
+      align-items: center;
+    }
+  }
+}

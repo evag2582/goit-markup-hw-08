@@ -68,7 +68,7 @@ textarea {
         width: 480px;
     }
          @media screen and (min-width:768px) {
-             width: 768px;
+             width: auto;
          }
         @media screen and (min-width:1200px) {
             width: 1200px;
@@ -83,7 +83,8 @@ textarea {
 
 @include screen-480{
     .page-header{
-    display: unset;
+    display: flex;
+    justify-content: space-between;
 }
 }
 .menu {
@@ -97,4 +98,25 @@ textarea {
     .menu {
         display: none;
     }
+}
+
+.container-icons{
+    display: flex;
+    justify-content: space-between;
+}
+.icons_redes{
+    width: 85px;
+        height: 22px;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 500px;
+        font-size: 18px;
+        line-height: 22px;
+        /* identical to box height, or 122% */
+    
+        letter-spacing: 0.02em;
+    
+        color: var(--brand-blue);
+        margin-top: 250px;
+        padding-left: auto;
 }

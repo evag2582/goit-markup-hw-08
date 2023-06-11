@@ -1,4 +1,4 @@
-@import "../utils/mixins";
+@import '../utils/mixins';
 
 .ours-services {
   display: flex;
@@ -22,10 +22,19 @@
   }
 }
 
-@include screen-480{
-      .ours-services {
-          max-width: 480px;
-          flex-wrap: wrap;
-          justify-content: center;
-        }
+@include screen-480 {
+  .ours-services {
+    width: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@include screen-768 {
+  .ours-services {
+    width: auto;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
 }

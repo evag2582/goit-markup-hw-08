@@ -45,3 +45,16 @@
       }
     }
   }
+@include screen-768 {
+  .clients-container {
+    width: 226px;
+    margin-right: 12px;
+    margin-bottom: unset;
+    justify-content: space-between;
+
+    .clients {
+      width: auto;
+      align-items: center;
+    }
+  }
+}

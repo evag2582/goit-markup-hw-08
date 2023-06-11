@@ -1,4 +1,5 @@
 .titles-team,
+.titles-team2,
 .titles-clients {
   font-style: normal;
   font-weight: 700;
@@ -38,13 +39,19 @@
   }
 }
 
-@include screen-480{
+@include screen-480 {
   .titles-team,
-    .titles-clients {
-      font-size: 26px;
-      padding: unset;
-  .titles-team__bgimages{
-    top: auto;
+  .titles-clients {
+    font-size: 26px;
+    padding: unset;
+    .titles-team__bgimages {
+      top: auto;
+    }
   }
+}
+@include screen-768 {
+  .titles-team{
+    display: none;
+    visibility: hidden;
   }
 }

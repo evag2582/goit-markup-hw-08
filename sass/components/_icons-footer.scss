@@ -63,3 +63,8 @@
         margin-left: 1%;
     }
 }
+@include screen-768{
+    .container-footer{
+        display: flex;
+    }
+}

@@ -18,9 +18,28 @@
       >
   </head>
   <body>
-    <header >
+    <header>
+      <div class="container">
           <ul class="page-header">
             <li><a class="logo" href="index.html">WebStudio</a></li>
+            <ul class="menu-list menu">
+            <li><a class="menu-list__link active" href="index.html">Estudio</a></li>
+            <li><a class="menu-list__link menu" href="portfolio.html">Portafolio</a></li>
+            <li><a class="menu-list__link menu" href="#">Contactos</a></li>
+            </ul>
+            <ul class="menu">
+            <li class="menu-list__link-contact">
+              <a class="menu-list__link-contact" href="mailto:info@devstudio.com">
+                    <svg class="menu-list__link-iconmail">
+                      <use href="./images/svg/icons.svg#sobre"></use>
+                    </svg>info@devstudio.com</a
+              >
+              <a class="menu-list__link-contact" href="tel:+525555296000">
+                    <svg class="menu-list__link-icontel">
+                      <use href="./images/svg/icons.svg#telefono"></use>
+                    </svg>+525555296000</a>
+            </li>
+            </ul>
         <button
           class="menu-toggle js-open-menu"
           aria-expanded="false"
@@ -40,25 +59,9 @@
             ></path>
           </svg>
         </button>
-            <ul class="menu-list menu">
-            <li><a class="menu-list__link active" href="index.html">Estudio</a></li>
-            <li><a class="menu-list__link menu" href="portfolio.html">Portafolio</a></li>
-            <li><a class="menu-list__link menu" href="#">Contactos</a></li>
-            </ul>
-            <ul class="menu">
-            <li class="menu-list__link-contact">
-              <a class="menu-list__link-contact" href="mailto:info@devstudio.com">
-                    <svg class="menu-list__link-iconmail">
-                      <use href="./images/svg/icons.svg#sobre"></use>
-                    </svg>info@devstudio.com</a
-              >
-              <a class="menu-list__link-contact" href="tel:+525555296000">
-                    <svg class="menu-list__link-icontel">
-                      <use href="./images/svg/icons.svg#telefono"></use>
-                    </svg>+525555296000</a>
-            </li>
-            </ul>
           </ul>
+      </div>
+
     <div class="menu-container js-menu-container" id="mobile-menu">
       <button class="menu-toggle js-close-menu">
         <svg
@@ -84,15 +87,41 @@
             <li><a class="link menu-list__link-contact" href="mailto:info@devstudio.com">info@devstudio.com</a><li>
              <li><a class="link menu-list__link-contact" href="tel:+525555296000">tel:+525555296000</a></li>
         </ul>
+
+            <ul class="container-icons">
+            <li>
+                  <a href="#">
+                    <svg class="icons_redes">
+                      <use href="./images/svg/icons.svg#instagram-mobile"></use>
+                    </svg>
+                  </a>
+            </li>
+            <li>
+                  <a href="#">
+                    <svg class="icons_redes">
+                      <use href="./images/svg/icons.svg#twitter-mobile"></use>
+                    </svg>
+                  </a>
+            </li>
+            <li>
+                  <a href="#">
+                    <svg class="icons_redes">
+                      <use href="./images/svg/icons.svg#facebook-mobile"></use>
+                    </svg>
+                  </a>
+            </li>
+            <li>
+                  <a href="#">
+                    <svg class="icons_redes">
+                      <use href="./images/svg/icons.svg#linkedin-mobile"></use>
+                    </svg>
+                  </a>
+            </li>
+            </ul>
     </div>
       </ul>
     </div>
-          <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
-      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
-      crossorigin="anonymous">
-    </script>
+
     </header>
     <main>
       <div class="main">
@@ -163,7 +192,7 @@
         </section>
       </div>
       <section >
-          <div class="ours-services">
+          <div class="container   ours-services">
             <section class="container ours-services">
           <ul>
             <li>
@@ -278,7 +307,7 @@
 
       <section class="bgcolor-team">
         <div class="container">
-          <h2 class="titles-team">Nuestro Equipo</h2>
+          <h2 class="titles-team2">Nuestro Equipo</h2>
           <ul class="team-container">
             <li class="team-card">
               <picture>

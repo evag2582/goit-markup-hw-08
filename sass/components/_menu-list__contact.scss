@@ -1,3 +1,5 @@
+@import "../utils/mixins";
+
 .menu-list__link-contact {
   font-family: 'Roboto';
   font-style: normal;
@@ -44,3 +46,8 @@
     }
 }
 
+@include screen-768{
+  .menu-list__link-contact{
+    display: block;
+  }
+}

@@ -90,13 +90,27 @@
       padding: unset;
     }
     .team-card {
-      width: 450px;
+      width: 354px;
       .team-card-image {
-        width: 450px;
+        width: 354px;
       }
     }
     .redes-icons-team {
-      justify-content: center;
+      justify-content: space-between;
+    }
+  }
+}
+@include screen-768 {
+  .bgcolor-team {
+    .team-container {
+      flex-wrap: wrap;
+      padding: unset;
+    }
+    .team-card {
+      width: 354px;
+      .team-card-image {
+        width: 354px;
+      }
     }
   }
 }

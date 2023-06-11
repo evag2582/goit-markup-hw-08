@@ -91,8 +91,29 @@
       }
       .suscrib__botton{
         position: unset;
-        width: 60%;
+        width: 75%;
         margin-bottom: 70px;
       }
       }
+}
+@include screen-768 {
+  .suscrib {
+    left: 30%;
+    display: block;
+    top: 3769px;;
+  }
+
+  .suscrib__modal {
+    .suscrib__modal-suscrib {
+      top: 3819px;
+      left: 25%;
+    }
+
+    .suscrib__botton {
+      width: 140%;
+      margin-bottom: 70px;
+      top: 300px;
+      left: -250px;
+    }
+  }
 }

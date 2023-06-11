@@ -1,3 +1,5 @@
+@import "../utils/mixins";
+
 .menu-list {
   width: 300px;
   display: flex;
@@ -46,13 +48,6 @@
   margin: 0;
   list-style: none;
 }
-
-@media (max-width: 767px) {
-  .menu {
-    display: none;
-  }
-}
-
 .menu .link {
   padding: 10px;
   color: inherit;
@@ -78,12 +73,6 @@
   border: none;
   border-radius: 50%;
   outline: none;
-}
-
-@media (min-width: 768px) {
-  .menu-toggle {
-    display: none;
-  }
 }
 
 .menu-toggle:hover,
@@ -125,6 +114,18 @@
 .mobile-menu .link {
   display: block;
   padding: 10px;
-  color: var(--brand-blue);
+  color: var(--brand-black);
   text-decoration: none;
 }
+ @include screen-768 {
+  .menu{
+    display: none;
+  }
+ }
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
+}
+
