@@ -1,56 +1,54 @@
-  .clients-container {
-    display: inline-flex;
-    flex-wrap: wrap;
+.clients-container {
+  display: inline-flex;
+  flex-wrap: wrap;
+  width: 170px;
+  height: 81px;
+  margin-right: 10px;
+  margin-bottom: 30px;
+  border: 1px solid var(--gray-color);
+  border-radius: 4px;
+
+  .clients-container:focus {
+    background-color: var(--brand-white);
+    border: var(--brand-blue);
+  }
+
+  .clients-container:focus .clients {
+    fill: var(--brand-blue);
+  }
+
+  .clients-container:hover {
+    border-color: var(--brand-blue);
+  }
+
+  .clients-container .clients:hover {
+    fill: var(--brand-blue);
+  }
+
+  .clients {
     width: 170px;
     height: 81px;
-    margin-right: 10px;
     margin-bottom: 30px;
-    border: 1px solid var(--gray-color);
-    border-radius: 4px;
-
-    .clients-container:focus {
-      background-color: var(--brand-white);
-      border: var(--brand-blue);
-    }
-
-    .clients-container:focus .clients {
-      fill: var(--brand-blue);
-    }
-
-    .clients-container:hover {
-      border-color: var(--brand-blue);
-    }
-
-    .clients-container .clients:hover {
-      fill: var(--brand-blue);
-    }
-
-    .clients {
-      width: 170px;
-      height: 81px;
-      margin-bottom: 30px;
-      padding: 14px 32px;
-      fill: var(--gray-color);
-    }
+    padding: 14px 32px;
+    fill: var(--gray-color);
   }
+}
 
 @include screen-480 {
-    .clients-container {
+  .clients-container {
+    margin-right: 12px;
+    margin-bottom: unset;
+    .clients {
       width: 210px;
-      margin-right: 12px;
-      margin-bottom: unset;
-      .clients {
-        width: auto;
-        align-items: center;
-      }
+      align-items: center;
     }
   }
+}
 @include screen-768 {
   .clients-container {
     width: 226px;
-    margin-right: 12px;
+    margin-right: unset;
     margin-bottom: unset;
-    justify-content: space-between;
 
     .clients {
       width: auto;

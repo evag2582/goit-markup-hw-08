@@ -1,122 +1,124 @@
-@import "./utils/variables";
-@import "./components/menu-list";
-@import "./components/menu-list__contact";
-@import "./components/contact-footer";
-@import "./components/main";
-@import "./components/backdrop";
-@import "./components/ours-services";
-@import "./components/services";
-@import "./components/teams";
-@import "./components/clients";
-@import "./components/address";
-@import "./components/icons-footer";
-@import "./components/suscrib";
-@import "./components/menu-buttons";
-@import "./components/proyecst-card";
-@import "./utils/mixins";
+@import './utils/variables';
+@import './components/menu-list';
+@import './components/menu-list__contact';
+@import './components/contact-footer';
+@import './components/main';
+@import './components/backdrop';
+@import './components/ours-services';
+@import './components/services';
+@import './components/teams';
+@import './components/clients';
+@import './components/address';
+@import './components/icons-footer';
+@import './components/suscrib';
+@import './components/menu-buttons';
+@import './components/proyecst-card';
+@import './utils/mixins';
 * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 body {
-    width: 100%;
-    font-family: 'Roboto', sans-serif;
-    color: $color-black;
-    list-style-type: none;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+  color: $color-black;
+  list-style-type: none;
 }
 header {
-    border-bottom: 1px solid #ececec;
-    margin-top: 20px;
+  border-bottom: 1px solid #ececec;
+  margin-top: 20px;
 }
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 section {
-    padding-top: 94px;
-    padding-bottom: 94px;
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 textarea {
-    resize: none;
-    font-family: inherit;
-    font-size: 50%;
-    border: 1px solid rgba(33, 33, 33, 0.2);
-    border-radius: 4px;
-    outline: none;
+  resize: none;
+  font-family: inherit;
+  font-size: 50%;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  border-radius: 4px;
+  outline: none;
 }
 .logo {
-    width: 145px;
-    font-family: 'Raleway', sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 26px;
-    line-height: 31px;
-    letter-spacing: 0.03em;
-    color: $color-blue;
-    text-decoration: none;
+  width: 145px;
+  font-family: 'Raleway', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 31px;
+  letter-spacing: 0.03em;
+  color: $color-blue;
+  text-decoration: none;
 }
 
 .container {
-    min-width: 320px;
-    max-width: 1170px;
-    padding-left: 15px;
-    padding-right: 15px;
-    margin-left: auto;
-    margin-right: auto;
+  min-width: 320px;
+  max-width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-left: auto;
+  margin-right: auto;
 
-    @media screen and (min-width:480px){
-        width: 480px;
-    }
-         @media screen and (min-width:768px) {
-             width: auto;
-         }
-        @media screen and (min-width:1200px) {
-            width: 1200px;
-        }
+  @media screen and (min-width: 480px) {
+    width: 480px;
+    text-align: center;
+  }
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    text-align: center;
+  }
+  @media screen and (min-width: 1200px) {
+    width: 1200px;
+  }
 }
 .page-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    padding: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 32px;
 }
 
-@include screen-480{
-    .page-header{
+@include screen-480 {
+  .page-header {
     display: flex;
     justify-content: space-between;
-}
+  }
 }
 .menu {
-    display: flex;
-    padding: 0;
-    margin: 0;
-    list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style: none;
 }
 
 @media (max-width: 767px) {
-    .menu {
-        display: none;
-    }
+  .menu {
+    display: none;
+  }
 }
 
-.container-icons{
-    display: flex;
-    justify-content: space-between;
+.container-icons {
+  display: flex;
+  justify-content: space-between;
 }
-.icons_redes{
-    width: 85px;
-        height: 22px;
-        font-family: 'Roboto';
-        font-style: normal;
-        font-weight: 500px;
-        font-size: 18px;
-        line-height: 22px;
-        /* identical to box height, or 122% */
-    
-        letter-spacing: 0.02em;
-    
-        color: var(--brand-blue);
-        margin-top: 250px;
-        padding-left: auto;
+.icons_redes {
+  width: 85px;
+  height: 22px;
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 500px;
+  font-size: 18px;
+  line-height: 22px;
+  /* identical to box height, or 122% */
+
+  letter-spacing: 0.02em;
+
+  color: var(--brand-blue);
+  margin-top: 250px;
+  padding-left: auto;
 }

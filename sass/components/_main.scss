@@ -73,5 +73,14 @@ screen and (min-resolution:2ddpx) {
     }
   }
  }
+@include screen-768 {
+  .main {
+    width: auto;
 
+    .main__title {
+      width: auto;
+      font-size: 26px;
+    }
+  }
+}
  
