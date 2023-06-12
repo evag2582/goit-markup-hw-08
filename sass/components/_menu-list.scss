@@ -1,4 +1,4 @@
-@import "../utils/mixins";
+@import '../utils/mixins';
 
 .menu-list {
   width: 300px;
@@ -117,15 +117,19 @@
   color: var(--brand-black);
   text-decoration: none;
 }
- @include screen-768 {
-  .menu{
+@include screen-768 {
+  .menu {
     display: none;
   }
- }
+  .menu-container {
+    position: fixed;
+    width: 105vw;
+    height: 100vh;
+  }
+}
 
 @media (min-width: 768px) {
   .menu-toggle {
     display: none;
   }
 }
-
