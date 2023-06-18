@@ -9,8 +9,8 @@
         @content;
     }
 }
-@mixin screen-1366 {
-    @media (max-width: 1366px) {
+@mixin screen-1200 {
+    @media (min-width: 1200px) {
         @content;
     }
 }

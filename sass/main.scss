@@ -89,6 +89,12 @@ textarea {
     justify-content: space-between;
   }
 }
+@include screen-768 {
+  .container-icons {
+width: auto;
+    
+  }
+}
 .menu {
   display: flex;
   padding: 0;
@@ -104,7 +110,7 @@ textarea {
 
 .container-icons {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 }
 .icons_redes {
   width: 85px;

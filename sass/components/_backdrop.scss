@@ -242,3 +242,24 @@
     }
   }
 }
+@include screen-1200 {
+  .backdrop {
+    width: unset;
+    height: unset;
+    position: unset;
+
+    .backdrop__modal {
+      width: 450px;
+      top: 15px;
+    }
+
+    .backdrop__modal-title {
+      width: unset;
+    }
+
+    .backdrop__modal-close {
+      left: 415px;
+      top: 9px;
+    }
+  }
+}

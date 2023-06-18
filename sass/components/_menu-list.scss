@@ -86,9 +86,8 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  padding: 32px;
   background-color: var(--brand-white);
-  z-index: 999;
+  z-index: 1;
 
   transform: translateX(100%);
   transition: transform 250ms ease-in-out;
@@ -117,19 +116,31 @@
   color: var(--brand-black);
   text-decoration: none;
 }
-@include screen-768 {
-  .menu {
-    display: none;
-  }
-  .menu-container {
-    position: fixed;
-    width: 105vw;
-    height: 100vh;
-  }
-}
+// @include screen-768 {
+//   .menu {
+//     display: none;
+//   }
+//   .menu-container {
+//     position: fixed;
+//     width: 100vw;
+//     height: 100vh;
+//   }
+//   .mobile-menu {
+//     display: none;
+//   padding: 20px;
+//   margin: 0;
+//   list-style: none;
+// }
+// }
 
 @media (min-width: 768px) {
   .menu-toggle {
+    display: none;
+  }
+  .menu-container{
+    display: none;
+  }
+  .menu-list{
     display: none;
   }
 }
