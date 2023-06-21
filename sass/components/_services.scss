@@ -40,8 +40,7 @@
 }
 
 @include screen-480 {
-  .titles-team,
-  .titles-clients {
+  .titles-team {
     display: none;
   }
 }
