@@ -42,11 +42,7 @@
 @include screen-480 {
   .titles-team,
   .titles-clients {
-    font-size: 26px;
-    padding: unset;
-    .titles-team__bgimages {
-      top: auto;
-    }
+    display: none;
   }
 }
 @include screen-768 {
