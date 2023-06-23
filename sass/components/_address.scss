@@ -43,11 +43,13 @@
 @include screen-768 {
   .bg-footer {
     height: 500px;
+    text-align: center;
     .bg-contain-footer {
       display: flex;
       width: auto;
-      justify-content: center;
-      align-items: center;
+      padding-left: 5%;
+      // justify-content: center;
+      // align-items: center;
     }
   }
 }
